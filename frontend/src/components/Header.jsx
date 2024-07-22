@@ -27,7 +27,7 @@ const Header = () => {
             {/* Navbar Desktop */}
             <Navbar containerStyles={"hidden md:flex gap-x-5 xl:gap-x-10 medium-15 "} />
             {/* Navber Mobile */}
-            <Navbar containerStyles={`${menuOpend ? "flex items-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300" : "flex item-start flex-col gap-y-12 fixed top-20 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300 -right-[100%] "}`}/>
+            <Navbar containerStyles={`${menuOpend ? " md:hidden flex items-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300" : "md:hidden flex item-start flex-col gap-y-12 fixed top-20 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300 -right-[100%] "}`} navBtnClick={toggleMenu}/>
             {/* Buttons  */}
             <div className="flexBetween sm:gap-x-2 bold-16">
                 {!menuOpend? (<MdMenu className="md:hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full hover:ring-secondary" onClick={toggleMenu} />) : (<MdClose className="md:hidden cursor-pointer hover:text-secondary mr-2 p-1 ring-1 ring-slate-900/30 h-8 w-8 rounded-full hover:ring-secondary" onClick={toggleMenu} />)}

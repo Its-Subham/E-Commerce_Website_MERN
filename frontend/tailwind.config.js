@@ -26,11 +26,11 @@ export default {
         },
       },
      backgroundImage: {
-        hero: "url('/src/assets/bgecom.png')",
+        hero: "url('/src/assets/bg-image.jpg')",
         banneroffer: "url('/src/assets/banneroffer.png')",
       },
       screens: {
-        xs: '400px',
+        'xs': '350px',
         '3xl': '1680px',
         '4xl': '2200px',
       },
